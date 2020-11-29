@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>História do Campus</title>
-    <link rel="stylesheet" href="../style/reset.css"/>
-    <link rel="stylesheet" href="../style/menu.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/menu.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <nav>
-        <div class="menu">
+      <div class="menu">
+        <ul>
+          <li><a href="#">História do campus</a></li>
+          <li><a href="#">Funções Gestoras</a></li>
+          <li>
+            <a href="#">Movimento Estudantil</a>
             <ul>
-                <li><a href="#">História do campus</a></li>
-                <li><a href="#">Funções Gestoras</a></li>
-                <li><a href="#">Movimento Estudantil</a>
-                    <ul>
-                        <li><a href="#">GECAM</a></li>
-                        <li><a href="#">DAMC</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Depoimentos</a></li>
+              <li><a href="#">GECAM</a></li>
+              <li><a href="#">DAMC</a></li>
             </ul>
-        </div>
+          </li>
+          <li><a href="#">Depoimentos</a></li>
+        </ul>
+      </div>
+      <div class="menu-mobile toggle">
+        <li><a href="#">História do campus</a></li>
+        <li><a href="#">Funções Gestoras</a></li>
+        <li><a href="#">Movimento Estudantil</a></li>
+        <li><a href="#">Depoimentos</a></li>
+      </div>
     </nav>
-</body>
+    <div class="toggle-menu">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <script src="../script/menu.js"></script>
+  </body>
 </html>
