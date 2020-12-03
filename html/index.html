@@ -6,10 +6,12 @@
     <title>História do Campus</title>
     <link rel="stylesheet" href="../style/reset.css" />
     <link rel="stylesheet" href="../style/menu.css" />
+    <link rel="stylesheet" href="../style/historia-do-campus.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   </head>
   <body>
+    <!--Menu-->
     <div class="blackout"></div>
     <nav>
       <div class="menu">
@@ -38,6 +40,30 @@
       <div class="line"></div>
       <div class="line"></div>
     </div>
+    <!--Header-->
+    <header>
+      <div class="header-container">
+        <h1>
+          Acervo Digital de História e <br> Memória do IFRJ Campus <br> Duque de Caxias.
+        </h1>
+      </div>
+    </header>
+    <!--Main e título-->
+    <main>
+      <h2>História do Campus</h2>
+    </main>
+
     <script src="../script/menu.js"></script>
+    <!--VLibras-->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
   </body>
 </html>
