@@ -17,10 +17,25 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     margin-top: 80px;
     font-size: 1rem;
     font-weight: 400;
 }
+
+/*Timeline*/
+.timeline{
+    display: flex;
+    margin-top: 50px;
+}
+.selection-circle{
+    margin-right: 75px;
+}
+.selection-circle p{
+    font-size: 1.2rem;
+}
+
+
 
 @media (max-width: 780px) {
     header .header-container{
