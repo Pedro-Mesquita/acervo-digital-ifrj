@@ -61,17 +61,7 @@ nav {
   cursor: pointer;
 }
 
-.blackout{
-  display: none;
-}
 
-.toggle-blackout{
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(17, 17, 17, 0.7);
-}
 
 /*Menu tablet e mobile*/
 @media (max-width: 780px) {
@@ -101,6 +91,7 @@ nav {
     align-items: center;
     justify-content: center;
     background-color: hsl(212, 33%, 49%);
+    z-index: 1000;
   }
   .toggle a {
     text-decoration: none;

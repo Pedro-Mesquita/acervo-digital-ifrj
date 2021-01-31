@@ -12,7 +12,6 @@
   </head>
   <body>
     <!--Menu-->
-    <div class="blackout"></div>
     <nav>
       <div class="menu">
         <ul>
@@ -54,42 +53,47 @@
     <main>
       <h2>História do Campus</h2>
       <div class="timeline">
-        <div class="selection-circle">
+        <div class="selection-circle" id="circle-2000">
           <p>2000</p>
-          <input type="radio" id="2000" checked value="2000">
+          <input type="radio" id="2000" name="option" checked value="2000">
           <label for="2000"></label>
         </div>
-        <div class="selection-circle">
+        <div class="selection-circle"id="circle-2001">
           <p>2001</p>
-          <input type="radio" id="2001" value="2001">
+          <input type="radio" id="2001" name="option" value="2001">
           <label for="2001"></label>
         </div>
-        <div class="selection-circle">
+        <div class="selection-circle" id="circle-2002">
           <p>2002</p>
-          <input type="radio" id="2002" value="2002">
+          <input type="radio" id="2002" name="option" value="2002">
           <label for="2002"></label>
         </div>
-        <div class="selection-circle">
+        <div class="selection-circle" id="circle-2003">
           <p>2003</p>
-          <input type="radio" id="2003" value="2003">
+          <input type="radio" id="2003" name="option" value="2003">
           <label for="2003"></label>
         </div>
-        <div class="selection-circle">
+        <div class="selection-circle" id="circle-2004">
           <p>2004</p>
-          <input type="radio" id="2004" value="2004">
+          <input type="radio" id="2004" name="option" value="2004">
           <label for="2004"></label>
         </div>
-        <div class="selection-circle">
+        <div class="selection-circle" id="circle-2005">
           <p>2005</p>
-          <input type="radio" id="2005" value="2005">
+          <input type="radio" id="2005" name="option" value="2005">
           <label for="2005"></label>
         </div>
       </div>
+      <div class="timeline-bar"></div>
     </main>
+
+    <div id="contentTimeline">
+      <img src="../imagens/image.jpg" id="imageTimeline"alt="">
+    </div>
 
     <!-- Importations -->
     <script src="../script/menu.js"></script>
-
+    <script src="../script/timeline.js"></script>
 
     <!--VLibras-->
     <div vw class="enabled">
