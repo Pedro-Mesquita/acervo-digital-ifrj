@@ -29,8 +29,8 @@ main {
   margin-top: 50px;
 }
 .selection-circle {
-  margin-right: 30px;
-  margin-left: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .selection-circle input[type="radio"] {
@@ -46,27 +46,27 @@ main {
   border-radius: 10px;
 }
 
-.selection-circle input[type="radio"]:hover{
-    border: 1px solid #404040;
-    background-color: #547aa5;
+.selection-circle input[type="radio"]:hover {
+  border: 1px solid #404040;
+  background-color: #547aa5;
 }
 
-.selection-circle input[type="radio"]:checked{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    background-color: #5d7ea3;
-    
-    border-radius: 10px;
+.selection-circle input[type="radio"]:checked {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background-color: #5d7ea3;
+
+  border-radius: 10px;
 }
 
 .selection-circle p {
   font-size: 1.2rem;
 }
 
-img {
+#imageTimeline {
   width: 80%;
   max-width: 600px;
   margin-top: 30px;
@@ -79,10 +79,29 @@ img {
 }
 
 .timeline-bar {
-  max-width: 750px;
+  margin-top: 10px;
+  max-width: 600px;
   width: clamp(10%, 75%, 100%);
   background-color: #404040;
   height: 2px;
+}
+
+.buttonArrow {
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+#arrowL {
+  width: 80%;
+}
+#arrowR {
+  width: 80%;
+  transform: rotate(180deg);
 }
 
 @media screen and (max-width: 780px) and (min-width: 670px) {
