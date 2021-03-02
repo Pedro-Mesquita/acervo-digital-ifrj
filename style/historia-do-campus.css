@@ -1,32 +1,7 @@
-header {
-  display: flex;
-  justify-content: start;
-  width: 100%;
-}
-
-header .header-container {
-  display: flex;
-  margin-left: clamp(100px, 200px, 200px);
-  justify-content: flex-start;
-  margin-top: 50px;
-  font-size: clamp(0.5rem, 0.9rem, 1.1rem);
-  font-weight: 500;
-}
-
-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 80px;
-  font-size: 1rem;
-  font-weight: 400;
-}
 
 /*Timeline*/
 .timeline {
   display: flex;
-  margin-top: 50px;
 }
 .selection-circle {
   margin-right: 20px;
@@ -37,10 +12,6 @@ main {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
   appearance: none;
   background-color: #5d7ea3;
   border-radius: 10px;
@@ -76,12 +47,28 @@ main {
 #contentTimeline {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#imageTimeline {
+  max-width: 500px;
+  max-height: 250px;
+}
+
+#contentTimelineText {
+  height: 100%;
+  width: min(600px, 90%);
+  margin-top: 30px;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
 }
 
 .timeline-bar {
   margin-top: 10px;
-  max-width: 600px;
-  width: clamp(10%, 75%, 100%);
+  width: min(600px, 70%);
   background-color: #404040;
   height: 2px;
 }
@@ -95,10 +82,16 @@ main {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  cursor: pointer;
 }
 #arrowL {
   width: 80%;
 }
+
+#arroL:hover {
+  box-shadow: 1px 1px 5px #000;
+}
+
 #arrowR {
   width: 80%;
   transform: rotate(180deg);
@@ -123,7 +116,7 @@ main {
     display: none;
   }
 }
-@media screen and (max-width: 669px) and (min-width: 600px) {
+@media screen and (max-width: 670px) and (min-width: 599px) {
   header .header-container {
     margin-left: 20px;
   }
@@ -146,7 +139,7 @@ main {
   }
 }
 
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) and (min-width: 401px) {
   header .header-container {
     margin-left: 20px;
   }
@@ -168,6 +161,34 @@ main {
     display: none;
   }
   #circle-2003 {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  header .header-container {
+    margin-left: 20px;
+  }
+
+  .header-container h1 {
+    font-size: 1rem;
+    margin-top: -80px;
+    margin-left: 10px;
+  }
+
+  main h2 {
+    font-size: 0.9rem;
+  }
+  #circle-2005 {
+    display: none;
+  }
+  #circle-2004 {
+    display: none;
+  }
+  #circle-2003 {
+    display: none;
+  }
+  #circle-2002 {
     display: none;
   }
 }

@@ -1,0 +1,15 @@
+.containerListImage{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.center{
+    margin: 0 20px;
+}
+
+.containerListImage img{
+    width: 150px;
+    height: 150px;
+
+}

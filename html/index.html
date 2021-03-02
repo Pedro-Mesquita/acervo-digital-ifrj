@@ -1,12 +1,18 @@
+<!--
+  !Fazer o blackout do menu responsivo
+-->
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>História do Campus</title>
-    <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/default.css" />
     <link rel="stylesheet" href="../style/menu.css" />
     <link rel="stylesheet" href="../style/historia-do-campus.css" />
+    <link rel="stylesheet" href="../style/footer.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
@@ -15,11 +21,12 @@
   </head>
   <body>
     <!--Menu-->
+    <div class="blackout"></div>
     <nav>
       <div class="menu">
         <ul>
-          <li><a href="#">História do campus</a></li>
-          <li><a href="#">Funções Gestoras</a></li>
+          <li><a href="./index.html">História do campus</a></li>
+          <li><a href="./funcaoGestora.html">Funções Gestoras</a></li>
           <li>
             <a href="#">Movimento Estudantil</a>
             <ul>
@@ -31,8 +38,8 @@
         </ul>
       </div>
       <div class="menu-mobile">
-        <li><a href="#">História do campus</a></li>
-        <li><a href="#">Funções Gestoras</a></li>
+        <li><a href="./index.html">História do campus</a></li>
+        <li><a href="./funcaoGestora.html">Funções Gestoras</a></li>
         <li><a href="#">Movimento Estudantil</a></li>
         <li><a href="#">Depoimentos</a></li>
       </div>
@@ -49,7 +56,7 @@
         <h1>
           Acervo Digital de História e <br />
           Memória do IFRJ Campus <br />
-          Duque de Caxias.
+          Duque de Caxias
         </h1>
       </div>
     </header>
@@ -60,46 +67,80 @@
       <!--Timeline-->
       <div class="timeline">
         <div class="buttonArrow">
-          <img id="arrowL" src="../imagens/icons/arrow.png" alt=""/>
+          <img id="arrowL" src="../imagens/icons/arrow.png" alt="" />
         </div>
         <div class="selection-circle" id="circle-2000">
           <p>2000</p>
-          <input type="radio" id="2000" name="option" checked value="2000"/>
+          <input type="radio" id="2000" name="option" checked value="2000" />
         </div>
         <div class="selection-circle" id="circle-2001">
           <p>2001</p>
-          <input type="radio" id="2001" name="option" value="2001"/>
+          <input type="radio" id="2001" name="option" value="2001" />
         </div>
         <div class="selection-circle" id="circle-2002">
           <p>2002</p>
-          <input type="radio" id="2002" name="option" value="2002"/>
+          <input type="radio" id="2002" name="option" value="2002" />
         </div>
         <div class="selection-circle" id="circle-2003">
           <p>2003</p>
-          <input type="radio" id="2003" name="option" value="2003"/>
+          <input type="radio" id="2003" name="option" value="2003" />
         </div>
         <div class="selection-circle" id="circle-2004">
           <p>2004</p>
-          <input type="radio" id="2004" name="option" value="2004"/>
+          <input type="radio" id="2004" name="option" value="2004" />
         </div>
         <div class="selection-circle" id="circle-2005">
           <p>2005</p>
           <input type="radio" id="2005" name="option" value="2005"/>
         </div>
         <div class="buttonArrow">
-          <img id="arrowR" src="../imagens/icons/arrow.png" alt=""/>
+          <img id="arrowR" src="../imagens/icons/arrow.png" alt="" />
         </div>
       </div>
       <div class="timeline-bar"></div>
     </main>
 
     <div id="contentTimeline">
-      <img src="../imagens/image.jpg" id="imageTimeline" alt="" />
+      <img
+        src="../imagens/1.jpg"
+        id="imageTimeline"
+        alt=""
+        title="barata deitada"
+      />
+      <div id="contentTimelineText">
+        <div id="k">
+        <text>
+          &emsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam
+          dignissim diam quis enim lobortis scelerisque. Elit ullamcorper
+          dignissim cras tincidunt lobortis feugiat vivamus. Sit amet tellus
+          cras adipiscing enim eu turpis egestas. Egestas sed sed risus pretium
+          quam vulputate dignissim suspendisse.
+        </text>
+      </div>
+      </div>
     </div>
 
+    <footer>
+      <div id="project">
+        <div id="titleProject">
+            Projeto Acervo Digital de História e Memória do <br> IFRJ Campus Duque de
+            Caxias.
+        </div>
+      </div>
+      <div id="separationBar"></div>
+      <div id="containerCredits">
+        <div id="titleCredits">Desenvolvido pelo aluno:<div>
+        <div id="names">
+            <li>Pedro Mesquita Maia</li>
+        </div>
+      </div>
+    </footer>
     <!-- Importations -->
     <script src="../script/menu.js"></script>
     <script src="../script/timeline.js"></script>
+    <script src="../script/footer.js"></script>
+    <script src="../script/effects.js"></script>
 
     <!--VLibras-->
     <div vw class="enabled">
